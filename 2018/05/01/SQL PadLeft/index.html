@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="SQL,REPLICATE,C#,PadLeft," />
 
 
 
@@ -83,13 +83,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="BLOG">
-<meta property="og:url" content="http://jichao.tk/index.html">
+<meta name="description" content="SQL PadLeft SQL PRINT RIGHT(CAST(REPLICATE(&amp;apos;0&amp;apos;, LEN(no_start)) + CAST(no_start + (inventory - 1) AS VARCHAR(50)) AS VARCHAR(50)), LEN(no_start))  PRINT RIGHT(CAST(REPLICATE(&amp;apos;0&amp;apos;, LE">
+<meta name="keywords" content="SQL,REPLICATE,C#,PadLeft">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SQL PadLeft">
+<meta property="og:url" content="http://jichao.tk/2018/05/01/SQL PadLeft/index.html">
 <meta property="og:site_name" content="BLOG">
+<meta property="og:description" content="SQL PadLeft SQL PRINT RIGHT(CAST(REPLICATE(&amp;apos;0&amp;apos;, LEN(no_start)) + CAST(no_start + (inventory - 1) AS VARCHAR(50)) AS VARCHAR(50)), LEN(no_start))  PRINT RIGHT(CAST(REPLICATE(&amp;apos;0&amp;apos;, LE">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-01T15:04:09.379Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BLOG">
+<meta name="twitter:title" content="SQL PadLeft">
+<meta name="twitter:description" content="SQL PadLeft SQL PRINT RIGHT(CAST(REPLICATE(&amp;apos;0&amp;apos;, LEN(no_start)) + CAST(no_start + (inventory - 1) AS VARCHAR(50)) AS VARCHAR(50)), LEN(no_start))  PRINT RIGHT(CAST(REPLICATE(&amp;apos;0&amp;apos;, LE">
 
 
 
@@ -119,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://jichao.tk/"/>
+  <link rel="canonical" href="http://jichao.tk/2018/05/01/SQL PadLeft/"/>
 
 
 
 
 
-  <title>BLOG - I Will Show You</title>
+  <title>SQL PadLeft | BLOG</title>
   
 
 
@@ -154,8 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -258,9 +262,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -290,9 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/01/SQL PadLeft/" itemprop="url">SQL PadLeft</a></h1>
+          <h1 class="post-title" itemprop="name headline">SQL PadLeft</h1>
         
 
         <div class="post-meta">
@@ -364,143 +366,61 @@
       
 
       
-        
-          <h1 id="SQL-PadLeft"><a href="#SQL-PadLeft" class="headerlink" title="SQL PadLeft"></a>SQL PadLeft</h1><ul>
+        <h1 id="SQL-PadLeft"><a href="#SQL-PadLeft" class="headerlink" title="SQL PadLeft"></a>SQL PadLeft</h1><ul>
 <li><p>SQL</p>
 <pre><code>PRINT RIGHT(CAST(REPLICATE(&apos;0&apos;, LEN(no_start)) + CAST(no_start + (inventory - 1) AS VARCHAR(50)) AS VARCHAR(50)), LEN(no_start))
 
 PRINT RIGHT(CAST(REPLICATE(&apos;0&apos;, LEN(&apos;000001&apos;)) + CAST(&apos;000001&apos; + (50 - 1) AS VARCHAR(50)) AS VARCHAR(50)), LEN(&apos;000001&apos;))
-</code></pre>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/01/SQL PadLeft/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
+</code></pre><a id="more"></a></li>
+<li><p>Result</p>
+<pre><code>000050
+</code></pre></li>
+</ul>
+<hr>
+<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><ul>
+<li><p>Test Sql</p>
+<pre><code>PRINT RIGHT(CAST(REPLICATE(&apos;0&apos;, LEN(&apos;000001&apos;)) + CAST(&apos;000001&apos; + (50 - 1) AS VARCHAR(50)) AS VARCHAR(50)), LEN(&apos;000001&apos;))
 
-    
+PRINT REPLICATE(&apos;0&apos;,5)
 
-    
+PRINT REPLICATE(&apos;0&apos;,5) + 123
 
-    
+PRINT REPLICATE(&apos;0&apos;,5) + &apos;123&apos;
 
-    <footer class="post-footer">
-      
+PRINT REPLICATE(&apos;0&apos;,5) + STR(123)
 
-      
+PRINT REPLICATE(&apos;0&apos;,5) + CAST(123 AS varchar(20))
 
-      
+PRINT STR(123)
 
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
+PRINT STR(123,5,2)
 
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://jichao.tk/2018/05/01/README/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="JICHAO">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://tva2.sinaimg.cn/crop.0.0.172.172.180/e2d7bb96jw8erhr0ezimsj204s04st8l.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="BLOG">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/01/README/" itemprop="url">README</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-01T22:39:59+08:00">
-                2018-05-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li>I Will Show You</li>
+PRINT STR(12345678900)
+</code></pre></li>
+</ul>
+<ul>
+<li><p>Test Result</p>
+<pre><code>000050
+00000
+123
+00000123
+00000       123
+00000123
+    123
+123.0
+**********
+</code></pre></li>
+</ul>
+<hr>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><p>C# <a href="https://msdn.microsoft.com/zh-cn/library/system.string.padleft.aspx" target="_blank" rel="noopener">PadLeft</a></p>
+</li>
+<li><p>SQL <a href="https://docs.microsoft.com/zh-cn/sql/t-sql/functions/replicate-transact-sql" target="_blank" rel="noopener">REPLICATE</a></p>
+</li>
+<li><p>SQL <a href="https://docs.microsoft.com/zh-cn/sql/t-sql/functions/str-transact-sql" target="_blank" rel="noopener">STR</a></p>
+</li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -508,21 +428,81 @@ PRINT RIGHT(CAST(REPLICATE(&apos;0&apos;, LEN(&apos;000001&apos;)) + CAST(&apos;
     
 
     
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="JICHAO wechat" style="width: 200px; max-width: 100%;"/>
+    <div>subscribe to my blog by scanning my public wechat account</div>
+</div>
 
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Donate comment here</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="JICHAO WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/SQL/" rel="tag"># SQL</a>
+          
+            <a href="/tags/REPLICATE/" rel="tag"># REPLICATE</a>
+          
+            <a href="/tags/C/" rel="tag"># C#</a>
+          
+            <a href="/tags/PadLeft/" rel="tag"># PadLeft</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/01/README/" rel="next" title="README">
+                <i class="fa fa-chevron-left"></i> README
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -532,10 +512,11 @@ PRINT RIGHT(CAST(REPLICATE(&apos;0&apos;, LEN(&apos;000001&apos;)) + CAST(&apos;
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -543,6 +524,10 @@ PRINT RIGHT(CAST(REPLICATE(&apos;0&apos;, LEN(&apos;000001&apos;)) + CAST(&apos;
 
 
           
+
+  
+
+
 
         </div>
         
@@ -563,8 +548,17 @@ PRINT RIGHT(CAST(REPLICATE(&apos;0&apos;, LEN(&apos;000001&apos;)) + CAST(&apos;
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -650,6 +644,22 @@ PRINT RIGHT(CAST(REPLICATE(&apos;0&apos;, LEN(&apos;000001&apos;)) + CAST(&apos;
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SQL-PadLeft"><span class="nav-number">1.</span> <span class="nav-text">SQL PadLeft</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Test"><span class="nav-number">1.1.</span> <span class="nav-text">Test</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.2.</span> <span class="nav-text">Reference</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -792,6 +802,10 @@ PRINT RIGHT(CAST(REPLICATE(&apos;0&apos;, LEN(&apos;000001&apos;)) + CAST(&apos;
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
