@@ -144,19 +144,19 @@
 
 
 
-  <meta name="description" content="LEFT JOIN ON AND/WHEREQuestion Are the results of the two SQL queries the same?  SQL12SELECT * FROM TableA a LEFT JOIN TableB b ON  b.AId =a.TableAId AND a.TableAId =1SELECT * FROM TableA a LEFT JOIN">
+  <meta name="description" content="LEFT JOIN ON AND/WHEREQuestion 这两个SQL查询的结果相同吗?  SQL12SELECT * FROM TableA a LEFT JOIN TableB b ON  b.AId =a.TableAId AND a.TableAId =1SELECT * FROM TableA a LEFT JOIN TableB b ON  b.AId =a.TableAId WH">
 <meta name="keywords" content="SQL,LEFT JOIN">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LEFT JOIN ON AND&#x2F;WHERE">
 <meta property="og:url" content="http://jichao.tk/2018/11/26/LEFT-JOIN-ON-WHERE/index.html">
 <meta property="og:site_name" content="JiChao Blog">
-<meta property="og:description" content="LEFT JOIN ON AND/WHEREQuestion Are the results of the two SQL queries the same?  SQL12SELECT * FROM TableA a LEFT JOIN TableB b ON  b.AId =a.TableAId AND a.TableAId =1SELECT * FROM TableA a LEFT JOIN">
+<meta property="og:description" content="LEFT JOIN ON AND/WHEREQuestion 这两个SQL查询的结果相同吗?  SQL12SELECT * FROM TableA a LEFT JOIN TableB b ON  b.AId =a.TableAId AND a.TableAId =1SELECT * FROM TableA a LEFT JOIN TableB b ON  b.AId =a.TableAId WH">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://i.ibb.co/56p1ydb/left-join-on-where.png">
-<meta property="og:updated_time" content="2018-12-16T17:39:45.454Z">
+<meta property="og:updated_time" content="2018-12-16T18:08:33.502Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LEFT JOIN ON AND&#x2F;WHERE">
-<meta name="twitter:description" content="LEFT JOIN ON AND/WHEREQuestion Are the results of the two SQL queries the same?  SQL12SELECT * FROM TableA a LEFT JOIN TableB b ON  b.AId =a.TableAId AND a.TableAId =1SELECT * FROM TableA a LEFT JOIN">
+<meta name="twitter:description" content="LEFT JOIN ON AND/WHEREQuestion 这两个SQL查询的结果相同吗?  SQL12SELECT * FROM TableA a LEFT JOIN TableB b ON  b.AId =a.TableAId AND a.TableAId =1SELECT * FROM TableA a LEFT JOIN TableB b ON  b.AId =a.TableAId WH">
 <meta name="twitter:image" content="https://i.ibb.co/56p1ydb/left-join-on-where.png">
 
 
@@ -498,7 +498,7 @@
 
       
         <h1 id="LEFT-JOIN-ON-AND-WHERE"><a href="#LEFT-JOIN-ON-AND-WHERE" class="headerlink" title="LEFT JOIN ON AND/WHERE"></a>LEFT JOIN ON AND/WHERE</h1><h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><blockquote>
-<p>Are the results of the two SQL queries the same?</p>
+<p>这两个SQL查询的结果相同吗?</p>
 </blockquote>
 <figure class="highlight sql"><figcaption><span>SQL</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> TableA a <span class="keyword">LEFT</span> <span class="keyword">JOIN</span> TableB b <span class="keyword">ON</span>  b.AId =a.TableAId <span class="keyword">AND</span> a.TableAId =<span class="number">1</span></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> TableA a <span class="keyword">LEFT</span> <span class="keyword">JOIN</span> TableB b <span class="keyword">ON</span>  b.AId =a.TableAId <span class="keyword">WHERE</span> a.TableAId = <span class="number">1</span></span><br></pre></td></tr></table></figure>
 <h2 id="Test-SQL"><a href="#Test-SQL" class="headerlink" title="Test SQL"></a>Test SQL</h2><h3 id="Creat-Database"><a href="#Creat-Database" class="headerlink" title="Creat Database"></a>Creat Database</h3><figure class="highlight sql"><figcaption><span>TEST Database</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- Create a new database called 'TEST' for XKA</span></span><br><span class="line"><span class="comment">-- Connect to the 'master' database to run this snippet</span></span><br><span class="line"><span class="keyword">USE</span> <span class="keyword">master</span></span><br><span class="line"><span class="keyword">GO</span></span><br><span class="line"><span class="comment">-- Create the new database if it does not exist already</span></span><br><span class="line"><span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (</span><br><span class="line">    <span class="keyword">SELECT</span> <span class="keyword">name</span></span><br><span class="line"><span class="keyword">FROM</span> sys.databases</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">name</span> = N<span class="string">'TEST'</span> </span><br><span class="line">)</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> <span class="keyword">TEST</span></span><br><span class="line"><span class="keyword">GO</span></span><br></pre></td></tr></table></figure>
@@ -780,7 +780,18 @@
 </tr>
 </tbody>
 </table>
-<p><img src="https://i.ibb.co/56p1ydb/left-join-on-where.png" alt="IMAGE"></p>
+<h3 id="ALL"><a href="#ALL" class="headerlink" title="ALL"></a>ALL</h3><p><img src="https://i.ibb.co/56p1ydb/left-join-on-where.png" alt="IMAGE"></p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><blockquote>
+<p>连接多张表查询时会生成临时表,使用<code>LEFT JOIN</code>时</p>
+</blockquote>
+<ul>
+<li><code>ON</code> 是生成临时表的条件，不管ON的结果是否为真，都会返回左边表的所有数据</li>
+<li><code>AND</code> 是在<code>ON</code>的基础上进行过滤，但是仍会返回左边表的所有数据</li>
+<li><code>WHERE</code> 是在临时表生成后，进行过滤，相当于对单表进行过滤</li>
+</ul>
+<h2 id="REF"><a href="#REF" class="headerlink" title="REF"></a>REF</h2><blockquote>
+<p><a href="https://stackoverflow.com/questions/44696051/sql-different-between-left-join-on-and-left-join-on-where?r=SearchResults" target="_blank" rel="noopener">Stackoverflow</a></p>
+</blockquote>
 
       
     </div>
@@ -1083,7 +1094,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#LEFT-JOIN-ON-AND-WHERE"><span class="nav-number">1.</span> <span class="nav-text">LEFT JOIN ON AND/WHERE</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Question"><span class="nav-number">1.1.</span> <span class="nav-text">Question</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-SQL"><span class="nav-number">1.2.</span> <span class="nav-text">Test SQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Creat-Database"><span class="nav-number">1.2.1.</span> <span class="nav-text">Creat Database</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Creat-Table"><span class="nav-number">1.2.2.</span> <span class="nav-text">Creat Table</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Creat-Data"><span class="nav-number">1.2.3.</span> <span class="nav-text">Creat Data</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Query-Result"><span class="nav-number">1.3.</span> <span class="nav-text">Query Result</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#LEFT-JOIN-ON-AND-WHERE"><span class="nav-number">1.</span> <span class="nav-text">LEFT JOIN ON AND/WHERE</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Question"><span class="nav-number">1.1.</span> <span class="nav-text">Question</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-SQL"><span class="nav-number">1.2.</span> <span class="nav-text">Test SQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Creat-Database"><span class="nav-number">1.2.1.</span> <span class="nav-text">Creat Database</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Creat-Table"><span class="nav-number">1.2.2.</span> <span class="nav-text">Creat Table</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Creat-Data"><span class="nav-number">1.2.3.</span> <span class="nav-text">Creat Data</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Query-Result"><span class="nav-number">1.3.</span> <span class="nav-text">Query Result</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ALL"><span class="nav-number">1.3.1.</span> <span class="nav-text">ALL</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">1.4.</span> <span class="nav-text">Conclusion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#REF"><span class="nav-number">1.5.</span> <span class="nav-text">REF</span></a></li></ol></li></ol></div>
             
 
           </div>
