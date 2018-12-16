@@ -31,34 +31,6 @@
     </url>
 
     <url>
-        <loc>http://jichao.tk/tags/SQL/</loc>
-        <lastmod>2018-12-06T13:24:26.388Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://jichao.tk/tags/REPLICATE/</loc>
-        <lastmod>2018-12-06T13:24:26.388Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://jichao.tk/tags/C/</loc>
-        <lastmod>2018-12-06T13:24:26.388Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://jichao.tk/tags/PadLeft/</loc>
-        <lastmod>2018-12-06T13:24:26.388Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://jichao.tk/tags/Windows-Commands/</loc>
         <lastmod>2018-12-06T13:24:57.994Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -68,6 +40,41 @@
     <url>
         <loc>http://jichao.tk/tags/XCOPY/</loc>
         <lastmod>2018-12-06T13:24:57.994Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://jichao.tk/tags/REPLICATE/</loc>
+        <lastmod>2018-12-16T17:39:24.217Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://jichao.tk/tags/C/</loc>
+        <lastmod>2018-12-16T17:39:24.217Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://jichao.tk/tags/PadLeft/</loc>
+        <lastmod>2018-12-16T17:39:24.217Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://jichao.tk/tags/SQL/</loc>
+        <lastmod>2018-12-16T17:39:45.454Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://jichao.tk/tags/LEFT-JOIN/</loc>
+        <lastmod>2018-12-16T17:39:45.454Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

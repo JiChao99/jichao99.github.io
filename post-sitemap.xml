@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>http://jichao.tk/2018/11/26/LEFT-JOIN-ON-WHERE/</loc>
+        <lastmod>2018-12-16T17:39:45.454Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://jichao.tk/2018/05/01/SQL%20PadLeft/</loc>
+        <lastmod>2018-12-16T17:39:24.217Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://jichao.tk/2018/11/19/WindowsProgramMonitorService/</loc>
         <lastmod>2018-12-10T13:45:47.485Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -24,24 +40,8 @@
     </url>
 
     <url>
-        <loc>http://jichao.tk/2018/05/01/SQL%20PadLeft/</loc>
-        <lastmod>2018-12-06T13:24:26.388Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://jichao.tk/2018/07/16/Failed-to-load-Msxmlsql-dll/</loc>
         <lastmod>2018-12-06T13:23:36.890Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://jichao.tk/2018/11/26/LEFT-JOIN-ON-WHERE/</loc>
-        <lastmod>2018-11-26T12:04:32.057Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
