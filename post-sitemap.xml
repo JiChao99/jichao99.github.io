@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>http://jichao.tk/2018/11/10/WITH-common-table-expression/</loc>
+        <lastmod>2018-12-17T16:11:26.680Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://jichao.tk/2018/11/26/LEFT-JOIN-ON-WHERE/</loc>
         <lastmod>2018-12-16T18:08:33.502Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -42,14 +50,6 @@
     <url>
         <loc>http://jichao.tk/2018/07/16/Failed-to-load-Msxmlsql-dll/</loc>
         <lastmod>2018-12-06T13:23:36.890Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://jichao.tk/2018/11/10/WITH-common-table-expression/</loc>
-        <lastmod>2018-11-25T13:30:16.416Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
