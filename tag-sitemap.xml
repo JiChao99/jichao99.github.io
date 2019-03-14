@@ -45,27 +45,6 @@
     </url>
 
     <url>
-        <loc>http://jichao.tk/tags/REPLICATE/</loc>
-        <lastmod>2018-12-16T18:03:55.252Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://jichao.tk/tags/C/</loc>
-        <lastmod>2018-12-16T18:03:55.252Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://jichao.tk/tags/PadLeft/</loc>
-        <lastmod>2018-12-16T18:03:55.252Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://jichao.tk/tags/LEFT-JOIN/</loc>
         <lastmod>2018-12-16T18:08:33.502Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -73,15 +52,36 @@
     </url>
 
     <url>
-        <loc>http://jichao.tk/tags/SQL/</loc>
+        <loc>http://jichao.tk/tags/WITH-common-table-expression/</loc>
         <lastmod>2018-12-17T16:11:26.680Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://jichao.tk/tags/WITH-common-table-expression/</loc>
-        <lastmod>2018-12-17T16:11:26.680Z</lastmod>
+        <loc>http://jichao.tk/tags/SQL/</loc>
+        <lastmod>2019-03-14T16:58:21.765Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://jichao.tk/tags/REPLICATE/</loc>
+        <lastmod>2019-03-14T16:58:21.765Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://jichao.tk/tags/C/</loc>
+        <lastmod>2019-03-14T16:58:21.765Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://jichao.tk/tags/PadLeft/</loc>
+        <lastmod>2019-03-14T16:58:21.765Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
