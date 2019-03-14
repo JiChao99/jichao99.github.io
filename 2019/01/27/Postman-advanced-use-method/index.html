@@ -152,10 +152,13 @@
 <meta property="og:site_name" content="JiChao Blog">
 <meta property="og:description" content="Postman 进阶使用技巧 Postman makes API development faster, easier, and better  Pre-request scripts Pre-request scripts are snippets of code associated with a collection request that are executed before the">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-14T16:59:18.983Z">
+<meta property="og:image" content="https://i.ibb.co/T0QG22c/Postman-Pre-request1.png">
+<meta property="og:image" content="https://i.ibb.co/h1NPNb4/Postman-Pre-request2.png">
+<meta property="og:updated_time" content="2019-03-14T17:38:24.838Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Postman 进阶使用技巧">
 <meta name="twitter:description" content="Postman 进阶使用技巧 Postman makes API development faster, easier, and better  Pre-request scripts Pre-request scripts are snippets of code associated with a collection request that are executed before the">
+<meta name="twitter:image" content="https://i.ibb.co/T0QG22c/Postman-Pre-request1.png">
 
 
 
@@ -485,11 +488,13 @@
 </blockquote>
 <p>简单来说 <code>Pre-request scripts</code> 就是一个请求前的代码片段。对于在请求头中包含 <code>时间戳</code> 或在 <code>URL</code> 参数中发送随机 <code>字母数字</code> 字符串的情况（<em>当然也可以是更复杂的，可以看下面的例子</em>），易用且好用。</p>
 <h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>比如，请求的接口需要传一个 <code>Base64(APPID + 时间戳)</code> 的 <code>token</code></p>
-<p>Pre-request</p>
-<figure class="highlight js"><figcaption><span>Pre-request</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timestamp = <span class="built_in">Math</span>.round(<span class="keyword">new</span> <span class="built_in">Date</span>().getTime()/<span class="number">1000</span>);  <span class="comment">//时间戳</span></span><br><span class="line"><span class="keyword">var</span> appid = <span class="string">"test"</span></span><br><span class="line"><span class="keyword">var</span> str = appid + timestamp;</span><br><span class="line"><span class="built_in">console</span>.log(str);</span><br><span class="line"><span class="keyword">var</span> strEnc = CryptoJS.enc.Base64.stringify(str);    <span class="comment">//CryptoJS </span></span><br><span class="line"><span class="built_in">console</span>.log(strEnc);</span><br><span class="line"></span><br><span class="line">pm.environment.set(<span class="string">"token"</span>, strEnc);    <span class="comment">//添加环境变量，不同版本可能此处语句不同。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>Pre-request</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timestamp = <span class="built_in">Math</span>.round(<span class="keyword">new</span> <span class="built_in">Date</span>().getTime()/<span class="number">1000</span>);  <span class="comment">//时间戳</span></span><br><span class="line"><span class="keyword">var</span> appid = <span class="string">"test"</span>;</span><br><span class="line"><span class="keyword">var</span> secret = <span class="string">"dswybs"</span>;</span><br><span class="line"><span class="keyword">var</span> str = appid + secret + timestamp;</span><br><span class="line"><span class="built_in">console</span>.log(str);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> hash = CryptoJS.SHA256(str);    <span class="comment">//CryptoJS</span></span><br><span class="line"><span class="keyword">var</span> strEnc = hash.toString();</span><br><span class="line"><span class="built_in">console</span>.log(strEnc);</span><br><span class="line"></span><br><span class="line">pm.environment.set(<span class="string">"token"</span>, strEnc);    <span class="comment">//添加环境变量，不同版本可能此处语句不同。</span></span><br><span class="line">pm.globals.set(<span class="string">"appid"</span>, appid);     <span class="comment">//添加全局变量，不同版本可能此处语句不同。</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li><a href="https://code.google.com/p/crypto-js/" target="_blank" rel="noopener"><code>CryptoJS</code></a> Postman常用的库之一。支持主流的加密算法. 如 <code>AES</code>，<code>DES`</code>HMAC-MD5<code>，</code>HMAC-SHA1 / 3/256/512<code>，</code>MD5` 等</li>
 </ul>
+<p>效果如图<br><img src="https://i.ibb.co/T0QG22c/Postman-Pre-request1.png" alt="IMG"><br><img src="https://i.ibb.co/h1NPNb4/Postman-Pre-request2.png" alt="IMG"></p>
+<p>除了<code>CryptoJS</code>,<strong>Postman</strong> 还支持 <a href="https://lodash.com/" target="_blank" rel="noopener"><code>Lodash</code></a> , <a href="https://cheerio.js.org/" target="_blank" rel="noopener"><code>cheerio</code></a> 等.</p>
+<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>wait JICHAO</p>
 
       
     </div>
@@ -786,7 +791,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Postman-进阶使用技巧"><span class="nav-number">1.</span> <span class="nav-text">Postman 进阶使用技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Pre-request-scripts"><span class="nav-number">1.1.</span> <span class="nav-text">Pre-request scripts</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example"><span class="nav-number">1.1.1.</span> <span class="nav-text">Example</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Postman-进阶使用技巧"><span class="nav-number">1.</span> <span class="nav-text">Postman 进阶使用技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Pre-request-scripts"><span class="nav-number">1.1.</span> <span class="nav-text">Pre-request scripts</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example"><span class="nav-number">1.1.1.</span> <span class="nav-text">Example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test"><span class="nav-number">1.2.</span> <span class="nav-text">Test</span></a></li></ol></li></ol></div>
             
 
           </div>
