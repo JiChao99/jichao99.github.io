@@ -144,20 +144,25 @@
 
 
 
-  <meta name="description" content="Postman 进阶使用技巧 Postman makes API development faster, easier, and better  Pre-request scripts Pre-request scripts are snippets of code associated with a collection request that are executed before the">
+  <meta name="description" content="由于工作中涉及到 API 的开发，以及第三方的对接，Postman 总是少不了使用的，除了简单的发请求，也发现了 Postman 自带的可以用到的功能，做个记录，避免再花时间学习。   Postman makes API development faster, easier, and better  Pre-request scripts Pre-request scripts are snipp">
 <meta name="keywords" content=".NET MSSQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Postman 进阶使用技巧">
 <meta property="og:url" content="http://jichao.tk/2019/01/27/Postman-advanced-use-method/index.html">
 <meta property="og:site_name" content="JiChao Blog">
-<meta property="og:description" content="Postman 进阶使用技巧 Postman makes API development faster, easier, and better  Pre-request scripts Pre-request scripts are snippets of code associated with a collection request that are executed before the">
+<meta property="og:description" content="由于工作中涉及到 API 的开发，以及第三方的对接，Postman 总是少不了使用的，除了简单的发请求，也发现了 Postman 自带的可以用到的功能，做个记录，避免再花时间学习。   Postman makes API development faster, easier, and better  Pre-request scripts Pre-request scripts are snipp">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://i.ibb.co/T0QG22c/Postman-Pre-request1.png">
 <meta property="og:image" content="https://i.ibb.co/h1NPNb4/Postman-Pre-request2.png">
-<meta property="og:updated_time" content="2019-03-14T17:38:24.838Z">
+<meta property="og:image" content="https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/WS-randomFullTests2.png">
+<meta property="og:image" content="https://i.ibb.co/Lr3kqtd/API-response.png">
+<meta property="og:image" content="https://i.ibb.co/HhCj054/Postman-test.png">
+<meta property="og:image" content="https://i.ibb.co/z6TGbFX/Postman-Collections-setting.png">
+<meta property="og:image" content="https://i.ibb.co/5nwGMTV/Postman-Collections.png">
+<meta property="og:updated_time" content="2019-05-04T19:15:54.885Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Postman 进阶使用技巧">
-<meta name="twitter:description" content="Postman 进阶使用技巧 Postman makes API development faster, easier, and better  Pre-request scripts Pre-request scripts are snippets of code associated with a collection request that are executed before the">
+<meta name="twitter:description" content="由于工作中涉及到 API 的开发，以及第三方的对接，Postman 总是少不了使用的，除了简单的发请求，也发现了 Postman 自带的可以用到的功能，做个记录，避免再花时间学习。   Postman makes API development faster, easier, and better  Pre-request scripts Pre-request scripts are snipp">
 <meta name="twitter:image" content="https://i.ibb.co/T0QG22c/Postman-Pre-request1.png">
 
 
@@ -480,21 +485,68 @@
       
 
       
-        <h1 id="Postman-进阶使用技巧"><a href="#Postman-进阶使用技巧" class="headerlink" title="Postman 进阶使用技巧"></a>Postman 进阶使用技巧</h1><blockquote>
-<p>Postman makes API development faster, easier, and better</p>
+        <p>由于工作中涉及到 <code>API</code> 的开发，以及第三方的对接，<code>Postman</code> 总是少不了使用的，除了简单的发请求，也发现了 <code>Postman</code> 自带的可以用到的功能，做个记录，避免再花时间学习。</p>
+<hr>
+<blockquote>
+<p><strong>Postman makes API development faster, easier, and better</strong></p>
 </blockquote>
 <h2 id="Pre-request-scripts"><a href="#Pre-request-scripts" class="headerlink" title="Pre-request scripts"></a>Pre-request scripts</h2><blockquote>
 <p>Pre-request scripts are snippets of code associated with a collection request that are executed before the request is sent. This is perfect for use-cases like including the timestamp in the request headers or sending a random alphanumeric string in the URL parameters.</p>
 </blockquote>
-<p>简单来说 <code>Pre-request scripts</code> 就是一个请求前的代码片段。对于在请求头中包含 <code>时间戳</code> 或在 <code>URL</code> 参数中发送随机 <code>字母数字</code> 字符串的情况（<em>当然也可以是更复杂的，可以看下面的例子</em>），易用且好用。</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>比如，请求的接口需要传一个 <code>Base64(APPID + 时间戳)</code> 的 <code>token</code></p>
+<p>简单来说 <code>Pre-request scripts</code> 就是一个请求前的代码(<code>JavaScript</code>)片段。对于在请求头中包含 <code>时间戳</code> 或在 <code>URL</code> 参数中发送随机 <code>字母数字</code> 字符串的情况（<em>当然也可以是更复杂的，可以看下面的例子</em>），易用且好用。</p>
+<h3 id="Pre-request-scripts-Example"><a href="#Pre-request-scripts-Example" class="headerlink" title="Pre-request scripts Example"></a>Pre-request scripts Example</h3><p>比如，请求的接口需要传一个 <code>Base64(APPID + 时间戳)</code> 的 <code>token</code></p>
 <figure class="highlight js"><figcaption><span>Pre-request</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timestamp = <span class="built_in">Math</span>.round(<span class="keyword">new</span> <span class="built_in">Date</span>().getTime()/<span class="number">1000</span>);  <span class="comment">//时间戳</span></span><br><span class="line"><span class="keyword">var</span> appid = <span class="string">"test"</span>;</span><br><span class="line"><span class="keyword">var</span> secret = <span class="string">"dswybs"</span>;</span><br><span class="line"><span class="keyword">var</span> str = appid + secret + timestamp;</span><br><span class="line"><span class="built_in">console</span>.log(str);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> hash = CryptoJS.SHA256(str);    <span class="comment">//CryptoJS</span></span><br><span class="line"><span class="keyword">var</span> strEnc = hash.toString();</span><br><span class="line"><span class="built_in">console</span>.log(strEnc);</span><br><span class="line"></span><br><span class="line">pm.environment.set(<span class="string">"token"</span>, strEnc);    <span class="comment">//添加环境变量，不同版本可能此处语句不同。</span></span><br><span class="line">pm.globals.set(<span class="string">"appid"</span>, appid);     <span class="comment">//添加全局变量，不同版本可能此处语句不同。</span></span><br></pre></td></tr></table></figure>
 <ul>
-<li><a href="https://code.google.com/p/crypto-js/" target="_blank" rel="noopener"><code>CryptoJS</code></a> Postman常用的库之一。支持主流的加密算法. 如 <code>AES</code>，<code>DES`</code>HMAC-MD5<code>，</code>HMAC-SHA1 / 3/256/512<code>，</code>MD5` 等</li>
+<li><a href="https://code.google.com/p/crypto-js/" target="_blank" rel="noopener"><code>CryptoJS</code></a> Postman常用的库之一。支持主流的加密算法. 如 <code>AES</code>，<code>DES</code> ， <code>HMAC-MD5</code> ， <code>HMAC-SHA1 / 3/256/512</code> ，<code>MD5</code> 等</li>
 </ul>
 <p>效果如图<br><img src="https://i.ibb.co/T0QG22c/Postman-Pre-request1.png" alt="IMG"><br><img src="https://i.ibb.co/h1NPNb4/Postman-Pre-request2.png" alt="IMG"></p>
+<ul>
+<li><code>Ctrl + Alt + C</code> 可以显示出 <code>Postman</code> 的控制台（查看log，以及 <code>HTTP</code> 报文），方便观察结果，建议打开，当然有需要的话，开个 <code>Fiddler</code> 是更好的了。</li>
+</ul>
 <p>除了<code>CryptoJS</code>,<strong>Postman</strong> 还支持 <a href="https://lodash.com/" target="_blank" rel="noopener"><code>Lodash</code></a> , <a href="https://cheerio.js.org/" target="_blank" rel="noopener"><code>cheerio</code></a> 等.</p>
-<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>wait JICHAO</p>
+<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>和 <code>Pre-request scripts</code> 刚好相反， <code>Test</code> 是请求后执行的代码(<code>JavaScript</code>)，用来测试请求的响应是否符合需求。比如，查看 <code>Http Status Code(HTTP 状态码)</code> , <code>响应时间</code>  甚至是 <code>response content(响应的内容)</code> 。借用下官方的图。</p>
+<p><img src="https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/WS-randomFullTests2.png" alt="IMG"></p>
+<h3 id="Test-Example"><a href="#Test-Example" class="headerlink" title="Test Example"></a>Test Example</h3><p>为了做测试，特意写了一个 <code>API</code> (实际是<code>.NET Core 3.0</code> 出了，想试一下，一行代码搞定，真香)</p>
+<figure class="highlight ps"><figcaption><span>console</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dotnet new webapi -o TodoApi</span><br><span class="line">code -r TodoApi</span><br></pre></td></tr></table></figure>
+<p>简单的写了一个 <code>response</code></p>
+<p><img src="https://i.ibb.co/Lr3kqtd/API-response.png" alt="IMG"></p>
+<p>针对性的写一些，测试语句</p>
+<figure class="highlight js"><figcaption><span>Test Script</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> jsonData = pm.response.json();</span><br><span class="line"><span class="built_in">console</span>.log(jsonData.id);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 状态码</span></span><br><span class="line">pm.test(<span class="string">"Status code is 200"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    pm.response.to.have.status(<span class="number">200</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 响应时间</span></span><br><span class="line">pm.test(<span class="string">"Response time is less than 200ms"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    pm.expect(pm.response.responseTime).to.be.below(<span class="number">200</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// response content</span></span><br><span class="line">pm.test(<span class="string">"by JICHAO"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    pm.expect(jsonData.type).to.eql(<span class="string">"JICHAO Postman-advanced-use-method"</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>测试结果如下图</p>
+<p><img src="https://i.ibb.co/HhCj054/Postman-test.png" alt="IMG"></p>
+<p>这样就可以清晰的看到结果了，不需要再自己看返回值，判断是否正确。</p>
+<hr>
+<p>Q : 可能看到这就有人要问了，上边的两个是很有用，但是实际的业务是多个请求，每个请求都要再点一下 <code>Send</code> 岂不是很累？</p>
+<p>A : 好问题好问题，这就是我们接下来要看的功能了。</p>
+<hr>
+<h2 id="Collections"><a href="#Collections" class="headerlink" title="Collections"></a>Collections</h2><p>先看下官方的说明</p>
+<blockquote>
+<p>A Postman Collection lets you group individual requests together. You can organize these requests into folders.</p>
+</blockquote>
+<p>简单来说，就是多个请求按照一定顺序组合在一起就是 <code>Collections</code> 了</p>
+<h3 id="Collections-Example"><a href="#Collections-Example" class="headerlink" title="Collections Example"></a>Collections Example</h3><p>一个实际的例子，比如你有烤鱼店的储值卡，当你结账时需要报你的卡号或者手机号，然后老版会查下你有多少钱，是否有会员价（查询接口），然后支付（支付接口）</p>
+<h4 id="查询接口"><a href="#查询接口" class="headerlink" title="查询接口"></a>查询接口</h4><p>Pre-request scripts</p>
+<figure class="highlight js"><figcaption><span>Pre-request scripts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//测试卡号池，当然也可以设置为从文件中读取</span></span><br><span class="line"><span class="keyword">var</span> cardArr = [</span><br><span class="line"><span class="string">"0123456"</span>,</span><br><span class="line"><span class="string">"0123457"</span>,</span><br><span class="line"><span class="string">"0123458"</span>,</span><br><span class="line">...,</span><br><span class="line"><span class="string">"0123555"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//随机取一个卡号，作为环境变量</span></span><br><span class="line"><span class="keyword">var</span> cardNo = cardArr[<span class="built_in">parseInt</span>(<span class="built_in">Math</span>.random()*<span class="number">100</span>)];</span><br><span class="line">pm.environment.set(<span class="string">"cardNo"</span>, cardNo);</span><br></pre></td></tr></table></figure>
+<p>Test scripts</p>
+<figure class="highlight js"><figcaption><span>Test scripts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//Status code</span></span><br><span class="line">pm.test(<span class="string">"Status code is 200"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    pm.response.to.have.status(<span class="number">200</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Response time</span></span><br><span class="line">pm.test(<span class="string">"Response time is less than 999ms"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    pm.expect(pm.response.responseTime).to.be.below(<span class="number">999</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> jsonData = pm.response.json();</span><br><span class="line"><span class="built_in">console</span>.log(jsonData.CardNumber)</span><br><span class="line"></span><br><span class="line"><span class="comment">//取当前卡的余额 * 0.8，作为环境变量，支付用</span></span><br><span class="line"><span class="keyword">var</span> amount = jsonData.money * <span class="number">0.8</span>;</span><br><span class="line">pm.environment.set(<span class="string">"amount"</span>, amount);</span><br><span class="line"><span class="built_in">console</span>.log(amount)</span><br></pre></td></tr></table></figure>
+<h4 id="支付接口"><a href="#支付接口" class="headerlink" title="支付接口"></a>支付接口</h4><p>Body</p>
+<figure class="highlight"><figcaption><span>Body</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"cardNumber"</span>: <span class="string">"&#123;&#123;cardNo&#125;&#125;"</span>,</span><br><span class="line">    <span class="attr">"password"</span>: <span class="string">"****"</span>,</span><br><span class="line">    <span class="attr">"amount"</span>: <span class="string">"&#123;&#123;amount&#125;&#125;"</span>,</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>此处的 <code> {{}} </code> 说明是变量，括号中的内容为变量名。</p>
+<p>Test scripts</p>
+<figure class="highlight js"><figcaption><span>Test scripts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//Status code</span></span><br><span class="line">pm.test(<span class="string">"Status code is 200"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    pm.response.to.have.status(<span class="number">200</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Response time</span></span><br><span class="line">pm.test(<span class="string">"Response time is less than 3000ms"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    pm.expect(pm.response.responseTime).to.be.below(<span class="number">3000</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//计算余额是否正确</span></span><br><span class="line"><span class="keyword">var</span> balance = pm.variables.get(<span class="string">"balance"</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> jsonData = pm.response.json();</span><br><span class="line">pm.test(<span class="string">"扣款不正确"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    pm.expect(jsonData.lastBalance - jsonData.balance).to.eql(amount);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>做完这些准备工作就可以，设置一个 <code>Collection</code> 并运行它了。设置项，有如下几项，<a href="https://learning.getpostman.com/docs/postman/collection_runs/starting_a_collection_run/" target="_blank" rel="noopener">官方文档</a>描述的更为详细，此处就不展开说了.<strong>需要注意的是 <code>Iterations</code> 是迭代，不是并发</strong></p>
+<p><img src="https://i.ibb.co/z6TGbFX/Postman-Collections-setting.png" alt="IMG"></p>
+<p>Result<br>结果如下图，是不是可以很方便的看出测试结果。</p>
+<p><img src="https://i.ibb.co/5nwGMTV/Postman-Collections.png" alt="IMG"></p>
+<p><em>BTW,<code>collection</code> 支持在 <a href="https://learning.getpostman.com/docs/postman/collection_runs/newman_with_docker/" target="_blank" rel="noopener"><code>Docker(可点击跳转)</code></a> 和 <a href="https://learning.getpostman.com/docs/postman/collection_runs/integration_with_jenkins/" target="_blank" rel="noopener"><code>Jenkins(可点击跳转)</code></a> 中使用，每次看到这些东西就有种转测试的冲动。。。，本人这部分也没有研究，有需要的可以研究下。</em></p>
+<h2 id="REF"><a href="#REF" class="headerlink" title="REF"></a>REF</h2><ol>
+<li><a href="https://learning.getpostman.com/" target="_blank" rel="noopener">Postman Learning Center
+</a></li>
+<li><a href="https://learning.getpostman.com/docs/postman/scripts/pre_request_scripts" target="_blank" rel="noopener">pre_request_scripts</a></li>
+<li><a href="https://learning.getpostman.com/docs/postman/scripts/test_scripts" target="_blank" rel="noopener">test_scripts</a></li>
+<li><a href="https://learning.getpostman.com/docs/postman/environments_and_globals/intro_to_environments_and_globals" target="_blank" rel="noopener">intro_to_environments_and_globals</a></li>
+<li><a href="https://learning.getpostman.com/docs/postman/collections/intro_to_collections" target="_blank" rel="noopener">collections</a></li>
+</ol>
 
       
     </div>
@@ -791,7 +843,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Postman-进阶使用技巧"><span class="nav-number">1.</span> <span class="nav-text">Postman 进阶使用技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Pre-request-scripts"><span class="nav-number">1.1.</span> <span class="nav-text">Pre-request scripts</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example"><span class="nav-number">1.1.1.</span> <span class="nav-text">Example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test"><span class="nav-number">1.2.</span> <span class="nav-text">Test</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Pre-request-scripts"><span class="nav-number">1.</span> <span class="nav-text">Pre-request scripts</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Pre-request-scripts-Example"><span class="nav-number">1.1.</span> <span class="nav-text">Pre-request scripts Example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test"><span class="nav-number">2.</span> <span class="nav-text">Test</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Test-Example"><span class="nav-number">2.1.</span> <span class="nav-text">Test Example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Collections"><span class="nav-number">3.</span> <span class="nav-text">Collections</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Collections-Example"><span class="nav-number">3.1.</span> <span class="nav-text">Collections Example</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#查询接口"><span class="nav-number">3.1.1.</span> <span class="nav-text">查询接口</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#支付接口"><span class="nav-number">3.1.2.</span> <span class="nav-text">支付接口</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#REF"><span class="nav-number">4.</span> <span class="nav-text">REF</span></a></li></ol></div>
             
 
           </div>
@@ -895,14 +947,6 @@
 
 
 
-
-  
-    
-      
-        
-      
-  
-  <script type="text/javascript" color='0,0,255' opacity='0.5' zIndex='-1' count='299' src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest-nomobile.min.js"></script>
 
 
 
