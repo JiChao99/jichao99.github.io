@@ -2,34 +2,34 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://jichao.tk</loc>
+        <loc>http://jichao.dev</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
     <url>
-        <loc>http://jichao.tk/categories/Error/</loc>
+        <loc>http://jichao.dev/categories/Error/</loc>
         <lastmod>2018-12-06T13:23:36.890Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://jichao.tk/categories/Error/SQL-Server/</loc>
+        <loc>http://jichao.dev/categories/Error/SQL-Server/</loc>
         <lastmod>2018-12-06T13:23:36.890Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://jichao.tk/categories/Windows-Commands/</loc>
+        <loc>http://jichao.dev/categories/Windows-Commands/</loc>
         <lastmod>2018-12-06T13:24:57.994Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://jichao.tk/categories/SQL/</loc>
+        <loc>http://jichao.dev/categories/SQL/</loc>
         <lastmod>2019-03-14T16:58:21.765Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

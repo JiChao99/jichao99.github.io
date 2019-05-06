@@ -3,22 +3,22 @@
 
 
     <sitemap>
-        <loc>http://jichao.tk/post-sitemap.xml</loc>
+        <loc>http://jichao.dev/post-sitemap.xml</loc>
         <lastmod>2019-05-04T19:15:54.885Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://jichao.tk/page-sitemap.xml</loc>
+        <loc>http://jichao.dev/page-sitemap.xml</loc>
         <lastmod>2018-12-15T16:06:30.252Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://jichao.tk/category-sitemap.xml</loc>
+        <loc>http://jichao.dev/category-sitemap.xml</loc>
         <lastmod>2018-12-06T13:23:36.890Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://jichao.tk/tag-sitemap.xml</loc>
+        <loc>http://jichao.dev/tag-sitemap.xml</loc>
         <lastmod>2018-12-06T13:23:36.890Z</lastmod>
     </sitemap>
 

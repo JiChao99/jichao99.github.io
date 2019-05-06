@@ -2,13 +2,13 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://jichao.tk</loc>
+        <loc>http://jichao.dev</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
     <url>
-        <loc>http://jichao.tk/2019/01/27/Postman-advanced-use-method/</loc>
+        <loc>http://jichao.dev/2019/01/27/Postman-advanced-use-method/</loc>
         <lastmod>2019-05-04T19:15:54.885Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -16,7 +16,7 @@
     </url>
 
     <url>
-        <loc>http://jichao.tk/2018/05/01/SQL%20PadLeft/</loc>
+        <loc>http://jichao.dev/2018/05/01/SQL%20PadLeft/</loc>
         <lastmod>2019-03-14T16:58:21.765Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -24,7 +24,7 @@
     </url>
 
     <url>
-        <loc>http://jichao.tk/2018/11/10/WITH-common-table-expression/</loc>
+        <loc>http://jichao.dev/2018/11/10/WITH-common-table-expression/</loc>
         <lastmod>2018-12-17T16:11:26.680Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -32,7 +32,7 @@
     </url>
 
     <url>
-        <loc>http://jichao.tk/2018/11/26/LEFT-JOIN-ON-WHERE/</loc>
+        <loc>http://jichao.dev/2018/11/26/LEFT-JOIN-ON-WHERE/</loc>
         <lastmod>2018-12-16T18:08:33.502Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -40,7 +40,7 @@
     </url>
 
     <url>
-        <loc>http://jichao.tk/2018/11/19/WindowsProgramMonitorService/</loc>
+        <loc>http://jichao.dev/2018/11/19/WindowsProgramMonitorService/</loc>
         <lastmod>2018-12-10T13:45:47.485Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -48,7 +48,7 @@
     </url>
 
     <url>
-        <loc>http://jichao.tk/2018/11/07/XCOPY/</loc>
+        <loc>http://jichao.dev/2018/11/07/XCOPY/</loc>
         <lastmod>2018-12-06T13:24:57.994Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -56,7 +56,7 @@
     </url>
 
     <url>
-        <loc>http://jichao.tk/2018/07/16/Failed-to-load-Msxmlsql-dll/</loc>
+        <loc>http://jichao.dev/2018/07/16/Failed-to-load-Msxmlsql-dll/</loc>
         <lastmod>2018-12-06T13:23:36.890Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -64,7 +64,7 @@
     </url>
 
     <url>
-        <loc>http://jichao.tk/2018/05/01/README/</loc>
+        <loc>http://jichao.dev/2018/05/01/README/</loc>
         <lastmod>2018-05-01T09:23:26.599Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
