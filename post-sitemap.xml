@@ -9,7 +9,15 @@
 
     <url>
         <loc>http://jichao.dev/2019/05/07/Chrome-Extensions/</loc>
-        <lastmod>2019-05-29T14:51:08.704Z</lastmod>
+        <lastmod>2019-06-05T16:30:31.205Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://jichao.dev/2019/06/05/Trac-DailyReportAnalysis/</loc>
+        <lastmod>2019-06-05T16:29:57.028Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
