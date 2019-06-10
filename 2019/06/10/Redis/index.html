@@ -144,21 +144,30 @@
 
 
 
-  <meta name="keywords" content=".NET MSSQL">
-<meta property="og:type" content="website">
-<meta property="og:title" content="JiChao Blog">
-<meta property="og:url" content="http://jichao.dev/tags/SQL-Server/index.html">
+  <meta name="description" content="最近在面试，很多公司都有要求使用过 Redis ，之前没有用过，既然很多公司都要求会，自然是有原因的。本文试着简单学习下 Redis ，并了解下它与 MemoryCache 有什么区别的（之前在 LPS 缓存是用的 MemoryCache ）。 定义看下官网的说明，  Redis is an open source (BSD licensed), in-memory data structure">
+<meta name="keywords" content="Redis,.NET CORE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Redis .NET CORE 简单使用">
+<meta property="og:url" content="http://jichao.dev/2019/06/10/Redis/index.html">
 <meta property="og:site_name" content="JiChao Blog">
+<meta property="og:description" content="最近在面试，很多公司都有要求使用过 Redis ，之前没有用过，既然很多公司都要求会，自然是有原因的。本文试着简单学习下 Redis ，并了解下它与 MemoryCache 有什么区别的（之前在 LPS 缓存是用的 MemoryCache ）。 定义看下官网的说明，  Redis is an open source (BSD licensed), in-memory data structure">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://i.ibb.co/7gznyKf/install-start.png">
+<meta property="og:image" content="https://i.ibb.co/2WLwMPC/quick-Start.png">
+<meta property="og:image" content="https://i.ibb.co/PFFv7Qq/clients.png">
+<meta property="og:image" content="https://i.ibb.co/J390QQR/basicUse.png">
+<meta property="og:updated_time" content="2019-06-10T16:08:27.278Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JiChao Blog">
+<meta name="twitter:title" content="Redis .NET CORE 简单使用">
+<meta name="twitter:description" content="最近在面试，很多公司都有要求使用过 Redis ，之前没有用过，既然很多公司都要求会，自然是有原因的。本文试着简单学习下 Redis ，并了解下它与 MemoryCache 有什么区别的（之前在 LPS 缓存是用的 MemoryCache ）。 定义看下官网的说明，  Redis is an open source (BSD licensed), in-memory data structure">
+<meta name="twitter:image" content="https://i.ibb.co/7gznyKf/install-start.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://jichao.dev/tags/SQL-Server/"/>
+  <link rel="canonical" href="http://jichao.dev/2019/06/10/Redis/"/>
 
 
 
@@ -168,7 +177,7 @@
   };
 </script>
 
-  <title>Tag: SQL Server | JiChao Blog</title>
+  <title>Redis .NET CORE 简单使用 | JiChao Blog</title>
   
 
 
@@ -227,7 +236,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -284,7 +293,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags<span class="badge">17</span></a>
   </li>
@@ -320,28 +329,6 @@
 
   
     
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 
   
 
@@ -390,58 +377,294 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>SQL Server<small>Tag</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://jichao.dev/2019/06/10/Redis/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JICHAO">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://tva2.sinaimg.cn/crop.0.0.172.172.180/e2d7bb96jw8erhr0ezimsj204s04st8l.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JiChao Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/07/16/Failed-to-load-Msxmlsql-dll/" itemprop="url">
-              
-                <span itemprop="name">Failed to load Msxmlsql.dll</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">Redis .NET CORE 简单使用
+              
+            
+          </h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-07-16T21:36:45+08:00"
-              content="2018-07-16" >
-          07-16
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-06-10 21:56:56" itemprop="dateCreated datePublished" datetime="2019-06-10T21:56:56+08:00">2019-06-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BU/" itemprop="url" rel="index"><span itemprop="name">BU</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/06/10/Redis/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">Comments: </span> <span class="post-comments-count valine-comment-count" data-xid="/2019/06/10/Redis/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/06/10/Redis/" class="leancloud_visitors" data-flag-title="Redis .NET CORE 简单使用">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Views: </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近在面试，很多公司都有要求使用过 <code>Redis</code> ，之前没有用过，既然很多公司都要求会，自然是有原因的。本文试着简单学习下 <code>Redis</code> ，并了解下它与 <code>MemoryCache</code> 有什么区别的（之前在 <code>LPS</code> 缓存是用的 <code>MemoryCache</code> ）。</p>
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>看下<a href="https://redis.io/" target="_blank" rel="noopener">官网</a>的说明，</p>
+<blockquote>
+<p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.</p>
+</blockquote>
+<p><code>Redis</code> 是一个开源的内存数据结构服务器，可以作为 <code>数据库</code> ，<code>高速缓存</code> ，<code>消息队列代理使用</code> 。支持 <code>字符串</code> ，<code>哈希表</code> ，<code>列表</code>，<code>集合</code> 等数据结构。然后内置复制，支持事务，以及不同级别的磁盘持久化（<code>Lua</code>,<code>LRU</code>没理解是什么，先跳过，有需要再研究）。<code>Redis Sentinel</code> （哨兵）和<code>Redis Cluster</code>（集群）一个支持高可用，一个支持自动分区。</p>
+<p>嗯，看着介绍功能可以说是很强大了，不过不知道公司具体会用到什么程度，先简单看下吧。</p>
+<h2 id="download"><a href="#download" class="headerlink" title="download"></a>download</h2><p><code>linux</code>的虚拟机也不知道在不在了，好久没用了。先用<code>windows</code>的吧。官网没有下载地址，<code>git</code>是有的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/microsoftarchive/redis/releases</span><br></pre></td></tr></table></figure>
+<p>我下了最新的<code>3.2.100</code>。</p>
+<h2 id="install-start"><a href="#install-start" class="headerlink" title="install/start"></a>install/start</h2><p>包中自带一个<code>Windows Service Documentation.docx</code>很贴心。按照文档的说明，<code>install</code>，<code>start</code>。</p>
+<p><img src="https://i.ibb.co/7gznyKf/install-start.png" alt="IMG"></p>
+<p>嗯，到这一步已经装好服务，并启动了。然后看下官网的<a href="https://redis.io/topics/quickstart" target="_blank" rel="noopener">quickStart</a>。</p>
+<h2 id="quickStart"><a href="#quickStart" class="headerlink" title="quickStart"></a>quickStart</h2><p>按照官网说的做，俺也一样。</p>
+<p><img src="https://i.ibb.co/2WLwMPC/quick-Start.png" alt="IMG"></p>
+<h2 id="NET"><a href="#NET" class="headerlink" title=".NET"></a>.NET</h2><p>看下官网中 <code>C#</code> 客户端是有多个的，推荐(下图中有五角星的)使用的是有三个 <code>Nhiredis</code>,<code>ServiceStack.Redis</code>,<code>StackExchange.Redis</code>，估计都是足够用的，看下哪个 <code>star</code> 多就用哪个吧。<code>ServiceStack.Redis</code>(1817),<code>StackExchange.Redis</code>(3547)，<code>StackExchange.Redis</code> 获得了胜利。</p>
+<p><img src="https://i.ibb.co/PFFv7Qq/clients.png" alt="IMG"></p>
+<p>新建一个 <code>.NET CORE</code> 控制台项目。</p>
+<figure class="highlight plain"><figcaption><span>NUGET</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSTALL-PACKAGE StackExchange.Redis</span><br></pre></td></tr></table></figure>
+<p>真棒，有一个<code>io</code>的文档<a href="https://stackexchange.github.io/StackExchange.Redis/Basics" target="_blank" rel="noopener">https://stackexchange.github.io/StackExchange.Redis/Basics</a></p>
+<p><img src="https://i.ibb.co/J390QQR/basicUse.png" alt="IMG"></p>
+<p>成功。</p>
+<p>好了，基本使用就到这儿了，明天还有个面试，要收拾东西睡觉了。按照目前了解的对比下与<code>MemoryCache</code>的区别也就是 <code>MemoryCache</code> 是基于<code>process</code> 的，而<code>Redis</code> 是单独的服务器。如果是单程序应该都是一样的，多程序使用相同缓存的话，<code>Redis</code> 肯定优于<code>MemoryCache</code>（不考虑<code>持久化</code>）。有空或者要用到的时候再深入研究吧。</p>
+<h2 id="REF"><a href="#REF" class="headerlink" title="REF"></a>REF</h2><ul>
+<li><a href="https://redis.io/" target="_blank" rel="noopener">redis</a></li>
+<li><a href="https://redis.io/topics/quickstart" target="_blank" rel="noopener">redis quickstart</a></li>
+<li><a href="[https://stackexchange.github.io/StackExchange.Redis/Basics]">StackExchange.Redis</a></li>
+</ul>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Give me a coke</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="https://i.ibb.co/LJk1ghp/wechatpay.jpg" alt="JICHAO WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>JICHAO</li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="http://jichao.dev/2019/06/10/Redis/" title="Redis .NET CORE 简单使用">http://jichao.dev/2019/06/10/Redis/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> unless stating additionally.</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Redis/" rel="tag"># Redis</a>
+          
+            <a href="/tags/NET-CORE/" rel="tag"># .NET CORE</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/05/Trac-DailyReportAnalysis/" rel="next" title="Trac-DailyReportAnalysis">
+                <i class="fa fa-chevron-left"></i> Trac-DailyReportAnalysis
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -464,8 +687,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -613,6 +845,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#download"><span class="nav-number">2.</span> <span class="nav-text">download</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#install-start"><span class="nav-number">3.</span> <span class="nav-text">install/start</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#quickStart"><span class="nav-number">4.</span> <span class="nav-text">quickStart</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NET"><span class="nav-number">5.</span> <span class="nav-text">.NET</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#REF"><span class="nav-number">6.</span> <span class="nav-text">REF</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -752,6 +1000,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 

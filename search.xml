@@ -3,6 +3,31 @@
   
     
     <entry>
+      <title>Redis .NET CORE 简单使用</title>
+      <link href="/2019/06/10/Redis/"/>
+      <url>/2019/06/10/Redis/</url>
+      
+        <content type="html"><![CDATA[<p>最近在面试，很多公司都有要求使用过 <code>Redis</code> ，之前没有用过，既然很多公司都要求会，自然是有原因的。本文试着简单学习下 <code>Redis</code> ，并了解下它与 <code>MemoryCache</code> 有什么区别的（之前在 <code>LPS</code> 缓存是用的 <code>MemoryCache</code> ）。</p><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>看下<a href="https://redis.io/" target="_blank" rel="noopener">官网</a>的说明，</p><blockquote><p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.</p></blockquote><p><code>Redis</code> 是一个开源的内存数据结构服务器，可以作为 <code>数据库</code> ，<code>高速缓存</code> ，<code>消息队列代理使用</code> 。支持 <code>字符串</code> ，<code>哈希表</code> ，<code>列表</code>，<code>集合</code> 等数据结构。然后内置复制，支持事务，以及不同级别的磁盘持久化（<code>Lua</code>,<code>LRU</code>没理解是什么，先跳过，有需要再研究）。<code>Redis Sentinel</code> （哨兵）和<code>Redis Cluster</code>（集群）一个支持高可用，一个支持自动分区。</p><p>嗯，看着介绍功能可以说是很强大了，不过不知道公司具体会用到什么程度，先简单看下吧。</p><h2 id="download"><a href="#download" class="headerlink" title="download"></a>download</h2><p><code>linux</code>的虚拟机也不知道在不在了，好久没用了。先用<code>windows</code>的吧。官网没有下载地址，<code>git</code>是有的。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/microsoftarchive/redis/releases</span><br></pre></td></tr></table></figure><p>我下了最新的<code>3.2.100</code>。</p><h2 id="install-start"><a href="#install-start" class="headerlink" title="install/start"></a>install/start</h2><p>包中自带一个<code>Windows Service Documentation.docx</code>很贴心。按照文档的说明，<code>install</code>，<code>start</code>。</p><p><img src="https://i.ibb.co/7gznyKf/install-start.png" alt="IMG"></p><p>嗯，到这一步已经装好服务，并启动了。然后看下官网的<a href="https://redis.io/topics/quickstart" target="_blank" rel="noopener">quickStart</a>。</p><h2 id="quickStart"><a href="#quickStart" class="headerlink" title="quickStart"></a>quickStart</h2><p>按照官网说的做，俺也一样。</p><p><img src="https://i.ibb.co/2WLwMPC/quick-Start.png" alt="IMG"></p><h2 id="NET"><a href="#NET" class="headerlink" title=".NET"></a>.NET</h2><p>看下官网中 <code>C#</code> 客户端是有多个的，推荐(下图中有五角星的)使用的是有三个 <code>Nhiredis</code>,<code>ServiceStack.Redis</code>,<code>StackExchange.Redis</code>，估计都是足够用的，看下哪个 <code>star</code> 多就用哪个吧。<code>ServiceStack.Redis</code>(1817),<code>StackExchange.Redis</code>(3547)，<code>StackExchange.Redis</code> 获得了胜利。</p><p><img src="https://i.ibb.co/PFFv7Qq/clients.png" alt="IMG"></p><p>新建一个 <code>.NET CORE</code> 控制台项目。</p><figure class="highlight plain"><figcaption><span>NUGET</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSTALL-PACKAGE StackExchange.Redis</span><br></pre></td></tr></table></figure><p>真棒，有一个<code>io</code>的文档<a href="https://stackexchange.github.io/StackExchange.Redis/Basics" target="_blank" rel="noopener">https://stackexchange.github.io/StackExchange.Redis/Basics</a></p><p><img src="https://i.ibb.co/J390QQR/basicUse.png" alt="IMG"></p><p>成功。</p><p>好了，基本使用就到这儿了，明天还有个面试，要收拾东西睡觉了。按照目前了解的对比下与<code>MemoryCache</code>的区别也就是 <code>MemoryCache</code> 是基于<code>process</code> 的，而<code>Redis</code> 是单独的服务器。如果是单程序应该都是一样的，多程序使用相同缓存的话，<code>Redis</code> 肯定优于<code>MemoryCache</code>（不考虑<code>持久化</code>）。有空或者要用到的时候再深入研究吧。</p><h2 id="REF"><a href="#REF" class="headerlink" title="REF"></a>REF</h2><ul><li><a href="https://redis.io/" target="_blank" rel="noopener">redis</a></li><li><a href="https://redis.io/topics/quickstart" target="_blank" rel="noopener">redis quickstart</a></li><li><a href="[https://stackexchange.github.io/StackExchange.Redis/Basics]">StackExchange.Redis</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> BU </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Redis </tag>
+            
+            <tag> .NET CORE </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Trac-DailyReportAnalysis</title>
       <link href="/2019/06/05/Trac-DailyReportAnalysis/"/>
       <url>/2019/06/05/Trac-DailyReportAnalysis/</url>

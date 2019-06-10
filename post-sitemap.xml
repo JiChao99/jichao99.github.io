@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>http://jichao.dev/2018/05/01/README/</loc>
+        <lastmod>2019-06-10T16:13:30.829Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://jichao.dev/2019/06/10/Redis/</loc>
+        <lastmod>2019-06-10T16:08:27.278Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://jichao.dev/2019/05/07/Chrome-Extensions/</loc>
         <lastmod>2019-06-05T16:30:31.205Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -74,14 +90,6 @@
     <url>
         <loc>http://jichao.dev/2018/07/16/Failed-to-load-Msxmlsql-dll/</loc>
         <lastmod>2018-12-06T13:23:36.890Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://jichao.dev/2018/05/01/README/</loc>
-        <lastmod>2018-05-01T09:23:26.599Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
