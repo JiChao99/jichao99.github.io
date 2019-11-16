@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>http://jichao.dev/2019/07/16/AboutCookie/</loc>
+        <lastmod>2019-11-16T12:43:08.774Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://jichao.dev/2019/06/18/String-VS-StringBuilder/</loc>
+        <lastmod>2019-11-16T12:42:34.927Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://jichao.dev/2018/05/01/README/</loc>
         <lastmod>2019-06-10T16:13:30.829Z</lastmod>
         <changefreq>weekly</changefreq>

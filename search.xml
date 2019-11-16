@@ -3,6 +3,28 @@
   
     
     <entry>
+      <title>关于Cookie的属性说明</title>
+      <link href="/2019/07/16/AboutCookie/"/>
+      <url>/2019/07/16/AboutCookie/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Cookie服务的首部字段"><a href="#Cookie服务的首部字段" class="headerlink" title="Cookie服务的首部字段"></a>Cookie服务的首部字段</h2><table><thead><tr><th>首部字段名</th><th>说明</th><th>首部类型</th></tr></thead><tbody><tr><td>Set-Cookie</td><td>开始状态管理所使用的Cookie信息</td><td>响应首部字段</td></tr><tr><td>Cookie</td><td>服务器收到的Cookie信息</td><td>请求首部字段</td></tr></tbody></table><h3 id="Set-Cookie-字段属性"><a href="#Set-Cookie-字段属性" class="headerlink" title="Set-Cookie 字段属性"></a>Set-Cookie 字段属性</h3><table><thead><tr><th>属性</th><th>说明</th></tr></thead><tbody><tr><td>NAME=Value</td><td>赋予Cookie的名称和其值（必需项）</td></tr><tr><td>expires=DATE</td><td>Cookie的有效期（若不明确指定则默认为浏览器关闭前为止）</td></tr><tr><td>path=PATH</td><td>将服务器上的文件目录作为Cookie的适用对象（若不指定则默认为文档所在的文件目录）</td></tr><tr><td>domain=域名</td><td>作为Cookie适用对象的域名（若不指定则默认为创建Cookie的服务器的域名）</td></tr><tr><td>Secure</td><td>仅在HTTPS安全通信时才会发送Cookie</td></tr><tr><td>HttpOnly</td><td>加以限制，使Cookie不能被JavaScript脚本访问</td></tr></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    <entry>
+      <title>String VS StringBuilder</title>
+      <link href="/2019/06/18/String-VS-StringBuilder/"/>
+      <url>/2019/06/18/String-VS-StringBuilder/</url>
+      
+        <content type="html"><![CDATA[<p>wait, just wait</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    <entry>
       <title>Redis .NET CORE 简单使用</title>
       <link href="/2019/06/10/Redis/"/>
       <url>/2019/06/10/Redis/</url>
