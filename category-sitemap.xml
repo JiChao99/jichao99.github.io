@@ -29,13 +29,6 @@
     </url>
 
     <url>
-        <loc>http://jichao.dev/categories/SQL/</loc>
-        <lastmod>2019-03-14T16:58:21.765Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://jichao.dev/categories/Chrome-Extensions/</loc>
         <lastmod>2019-06-05T16:30:31.205Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -45,6 +38,13 @@
     <url>
         <loc>http://jichao.dev/categories/BU/</loc>
         <lastmod>2019-06-10T16:08:27.278Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://jichao.dev/categories/SQL/</loc>
+        <lastmod>2020-03-03T14:49:00.128Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

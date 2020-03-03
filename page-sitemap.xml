@@ -9,7 +9,14 @@
     
     <url>
         <loc>http://jichao.dev/words/202003.html</loc>
-        <lastmod>2020-03-02T15:15:33.918Z</lastmod>
+        <lastmod>2020-03-03T14:12:23.398Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://jichao.dev/temp/Mysql-vs-SQLServer.html</loc>
+        <lastmod>2020-03-03T02:52:40.614Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

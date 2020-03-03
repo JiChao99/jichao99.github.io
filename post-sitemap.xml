@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>http://jichao.dev/2020/03/03/mysqlDesignSpecification/</loc>
+        <lastmod>2020-03-03T14:49:00.128Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://jichao.dev/2019/07/16/AboutCookie/</loc>
         <lastmod>2019-11-16T12:47:18.665Z</lastmod>
         <changefreq>weekly</changefreq>
