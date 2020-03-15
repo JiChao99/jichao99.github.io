@@ -8,8 +8,15 @@
     </url>
     
     <url>
+        <loc>http://jichao.dev/DAYS/</loc>
+        <lastmod>2020-03-15T16:52:31.400Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>http://jichao.dev/words/202003.html</loc>
-        <lastmod>2020-03-11T15:56:11.051Z</lastmod>
+        <lastmod>2020-03-15T16:41:09.012Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -24,13 +31,6 @@
     <url>
         <loc>http://jichao.dev/words/202001.html</loc>
         <lastmod>2020-03-01T11:31:29.689Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>http://jichao.dev/DAYS/</loc>
-        <lastmod>2019-12-31T15:11:48.223Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
