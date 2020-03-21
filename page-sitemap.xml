@@ -8,8 +8,15 @@
     </url>
     
     <url>
+        <loc>http://jichao.dev/DAYS/2tom.html</loc>
+        <lastmod>2020-03-21T16:05:18.947Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>http://jichao.dev/words/202003.html</loc>
-        <lastmod>2020-03-20T15:37:15.896Z</lastmod>
+        <lastmod>2020-03-21T15:49:19.224Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
